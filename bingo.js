@@ -86,6 +86,8 @@ function stopRoulette () {
             if (testC) {
                 loopCounter++;
                 if (loopCounter > 10) {
+                    nowR = 99;
+                    renderRouletteCard(gameBingoArray);
                     startButton.hidden = true;
                     controlText.innerText = "G A M E  O V E R . . .";
                     return;
