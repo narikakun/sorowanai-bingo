@@ -98,6 +98,7 @@ function stopRoulette () {
                 }, 100);
             } else {
                 loopCounter = 0;
+                controlText.innerText = `${gameBingoArray[nowR]} が出ました！`;
                 for (const cardKey1 in nowBingoCard) {
                     for (const cardKey2 in nowBingoCard[cardKey1]) {
                         if (gameBingoArray[nowR] == nowBingoCard[cardKey1][cardKey2]) {
@@ -107,7 +108,6 @@ function stopRoulette () {
                 }
                 renderBingoCard(nowBingoCard);
                 gameBingoArray = gameBingoArray.filter(f => f !== gameBingoArray[nowR]);
-                controlText.innerText = `${gameBingoArray[nowR]} が出ました！`;
                 startButton.hidden = false;
             }
         }
