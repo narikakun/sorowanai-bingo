@@ -1,0 +1,49 @@
+body {
+    font-family: 'Courier New' , monospace;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.col {
+    display: block;
+}
+
+table, td, th {
+    margin: auto;
+    border-collapse: collapse;
+    border:1px solid #333;
+}
+
+th {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.bingo-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#controlText {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+#start {
+    margin-top: 30px;
+    padding: 0 20px;
+    font-size: 40px;
+}
+
+.active {
+    background-color: lightpink;
+}
+
